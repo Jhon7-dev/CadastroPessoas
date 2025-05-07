@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class MainMenu {
+     
+     public static void main(String[] args) {
+          
+          Scanner scanner = new Scanner(System.in);
+          char opcao;
+          Pessoa pessoa = new Pessoa();
+          do{
+               System.out.println("==== MENU ====");
+               System.out.println("1 - Criar Pessoa");
+               System.out.println("2 - Mostrar Pessoa");
+               System.out.println("3 - Sair");
+               opcao = scanner.nextLine().charAt(0);
+
+               switch (opcao) {
+               case '1':{
+                    System.out.println("=== CADASTRO DE PESSOA ===");
+                    System.out.print("NOME: ");
+                    pessoa.setNome(scanner.nextLine());
+                    System.out.print("CPF: ");
+                    pessoa.setCpf(scanner.nextLine());
+                    System.out.print("SEXO: ");
+                    pessoa.setSexo(scanner.nextLine().charAt(0));
+                    System.out.print("IDADE: ");
+                    pessoa.setIdade(scanner.nextInt());
+                    scanner.nextLine();
+                    System.out.println("CADASTRO REALIZADO COM SUCESSO!");
+                    System.out.println("=================================");
+                    System.out.println("O NOME DA PESSOA É " + pessoa.getNome());
+                     System.out.println("PORTADORA DO CPF " + pessoa.getCpf()); 
+                     System.out.println("TEM O SEXO " + pessoa.getSexo());
+                    System.out.println("E IDADE DE " + pessoa.getIdade() + " ANOS." );
+                    break;
+               }
+               case '2': {
+                    if(pessoa!=null){
+                         pessoa.MostrarPessoa();
+                    }else{
+                         System.out.println("REALIZE O CADASTRO! ");
+                    }
+                    break;
+               }
+               case '3':{
+                    System.out.println("ATÉ BREVE!");
+                    break;
+               }
+          }
+          
+     }
+          while(opcao != '3');
+          System.out.println("PROGRAMA ENCERRADO!");
+     
+     }
+}
