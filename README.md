@@ -1,25 +1,9 @@
-# CadastroPessoas
 
-+-----------------------------+
-| Pessoa |
-+-----------------------------+
-| - CPF: String |
-| - Nome: String |
-| - Sexo: char |
-| - Idade: int |
-+-----------------------------+
-| + setCPF(cpf: String): void|
-| + getCPF(): String |
-| + setNome(nome: String): void |
-| + getNome(): String |
-| + setIdade(idade: int): void |
-| + getIdade(): int |
-| + setSexo(sexo: char): void |
-| + getSexo(): char |
-| + imprimir(): String |
-+-----------------------------+
+ # Projeto de Cadastro de Pessoas
+ 
+ Este projeto simula o cadastro de uma pessoa com atributos e métodos básicos em Java.
+ 
+## Diagrama da Classe Pessoa
 
-Menu:
-1 – Criar pessoa
-2 – Mostrar pessoa
-3 – Sair
+![Diagrama da Classe Pessoa] ![PessoaCadastro](https://github.com/user-attachments/assets/7d9ec7dd-60bf-413a-ab4c-3dc763e4be18)
+
